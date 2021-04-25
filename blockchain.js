@@ -14,6 +14,10 @@ class Blockchain {
         this.chain.push(newBlock)
     }
 
+    replaceChain(chain) {
+        if (chain.length > this.chain.length && Blockchain.isValidChain(chain)) this.chain = chain
+    }
+
     static isValidChain(chain) {
         let validChain = true
         if (JSON.stringify(chain[0]) !== JSON.stringify(Block.genesis())) validChain = false
