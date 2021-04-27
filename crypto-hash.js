@@ -1,5 +1,4 @@
 const crypto = require('crypto')
-const { hasUncaughtExceptionCaptureCallback } = require('process')
 
 const cryptoHash = (...inputs) => {
     const hash = crypto.createHash('sha256')

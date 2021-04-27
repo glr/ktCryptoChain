@@ -1,3 +1,4 @@
+const hexToBinary = require('hex-to-binary')
 const cryptoHash = require('./crypto-hash')
 
 describe('cryptoHash()', () => {
